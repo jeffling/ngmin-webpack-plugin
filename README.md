@@ -2,7 +2,7 @@
 
 In your webpack config: 
 
-```
+```javascript
 var ngminPlugin = require("ngmin-webpack-plugin");
 
 module.exports = {
@@ -15,17 +15,19 @@ module.exports = {
 
 As a more realistic example, if you're running webpack from a script (like gulp or grunt): 
 
-```
+```javascript
+var webpack = require("webpack");
 var ngminPlugin = require("ngmin-webpack-plugin");
 var webpackConfig = require("./webpack.config.js");
 
-if (argv.production) {  # --production option
+// --production option
+if (argv.production) {  
   webpackConfig.plugins = webpackConfig.plugins.concat(new ngminPlugin(), new webpack.optimize.UglifyJsPlugin());
   webpackConfig.devtool = false;
 }
 
 webpack webpackConfig, (err, stats) ->
   if (err)
-    throw new err
+    throw err
   console.log stats.toString
 ```

@@ -2,10 +2,10 @@
   "name": "ngmin-webpack-plugin",
   "version": "0.1.0",
   "description": "Webpack plugin that runs ngmin on your bundles.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "coffee -c index.coffee"
+    "build": "coffee -c -o dist/ index.coffee"
   },
   "author": "Jeff Ling <jeff@bench.co>",
   "license": "ISC",
