@@ -19,6 +19,7 @@ As a more realistic example, if you're running webpack from a script (like gulp 
 var webpack = require("webpack");
 var ngminPlugin = require("ngmin-webpack-plugin");
 var webpackConfig = require("./webpack.config.js");
+var argv = require("minimist")(process.argv.slice(2));
 
 // --production option
 if (argv.production) {  
