@@ -1,4 +1,4 @@
-Runs the [ngmin](http://github.com/ pre-minimizer to insert AngularJS DI annotations, so instead of writing
+Runs the [ngmin](http://github.com/btford/ngmin) pre-minimizer to insert AngularJS DI annotations, so instead of writing
 ```javascript
 angular.module('whatever')
 .controller('MyCtrl', ['$scope', '$http', 
