@@ -1,3 +1,15 @@
+Runs the [ngmin](http://github.com/ pre-minimizer to insert AngularJS DI annotations, so instead of writing
+```javascript
+angular.module('whatever')
+.controller('MyCtrl', ['$scope', '$http', 
+  function ($scope, $http) { ... }]);
+```
+you can write 
+```javascript
+angular.module('whatever')
+.controller('MyCtrl', function ($scope, $http) { ... });
+```
+
 # Usage
 
 In your webpack config: 
