@@ -14,7 +14,9 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "ngmin": "^0.5.0",
-    "webpack-core": "^0.3.4"
+    "ngmin": "^0.5.0"
+  },
+  "dependencies": {
+    "webpack-core": "^0.4.8"
   }
 }
