@@ -17,6 +17,6 @@
     "ngmin": "^0.5.0"
   },
   "dependencies": {
-    "webpack-core": "^0.4.8"
+    "webpack-core": "^0.3.x"
   }
 }
