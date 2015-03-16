@@ -1,6 +1,10 @@
-** Deprecated for the most part **
+**Deprecated for the most part**
 
-ngmin is no longer the best dependency annotator to use. btford recommends using ng-annotate. of course, there's a plugin for that right here: https://github.com/jeffling/ng-annotate-webpack-plugin
+ngmin is no longer the best dependency annotator to use. btford recommends using ng-annotate. of course, there's a plugin for that right here: https://github.com/jeffling/ng-annotate-webpack-plugin. 
+
+That being said, if you _have_ to use ngmin, and you se a bug, feel free to make an issue and I'll try my best to help.
+
+# ngmin-webpack-plugin
 
 Runs the [ngmin](http://github.com/btford/ngmin) pre-minimizer to insert AngularJS DI annotations, so instead of writing
 ```javascript
