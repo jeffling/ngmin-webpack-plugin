@@ -1,3 +1,7 @@
+** Deprecated for the most part **
+
+ngmin is no longer the best dependency annotator to use. btford recommends using ng-annotate. of course, there's a plugin for that right here: https://github.com/jeffling/ng-annotate-webpack-plugin
+
 Runs the [ngmin](http://github.com/btford/ngmin) pre-minimizer to insert AngularJS DI annotations, so instead of writing
 ```javascript
 angular.module('whatever')
